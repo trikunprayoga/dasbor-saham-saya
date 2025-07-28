@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografis SSIA: Terdorong oleh Investasi BYD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 380px;
+            }
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #00A6ED, #75DB72);
+        }
+        .stat-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-gray-900 leading-tight">
+                SSIA: <span class="text-transparent bg-clip-text gradient-bg">Titik Balik</span> Pertumbuhan
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                Bagaimana investasi raksasa EV, BYD, menjadi katalisator transformasional bagi PT Surya Semesta Internusa Tbk (SSIA) dan properti andalannya, Subang Smartpolitan.
+            </p>
+        </header>
+
+        <section id="byd-catalyst" class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Katalisator BYD: Investasi Skala Global</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-10">
+                    BYD, produsen EV terbesar dunia, memilih Subang Smartpolitan milik SSIA untuk pabriknya di Indonesia. Ini bukan sekadar transaksi, melainkan validasi kelas dunia yang mengubah peta permainan.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="gradient-bg text-white rounded-xl shadow-md p-6 flex flex-col justify-center items-center">
+                        <span class="text-5xl font-black">US$1 M</span>
+                        <p class="mt-2 font-semibold">Nilai Investasi</p>
+                        <p class="text-sm opacity-80">(~Rp 16,3 Triliun)</p>
+                    </div>
+                    <div class="gradient-bg text-white rounded-xl shadow-md p-6 flex flex-col justify-center items-center">
+                        <span class="text-5xl font-black">150.000</span>
+                        <p class="mt-2 font-semibold">Unit Mobil/Tahun</p>
+                        <p class="text-sm opacity-80">Kapasitas Produksi</p>
+                    </div>
+                    <div class="gradient-bg text-white rounded-xl shadow-md p-6 flex flex-col justify-center items-center">
+                        <span class="text-5xl font-black">>100 Ha</span>
+                        <p class="mt-2 font-semibold">Luas Lahan Pabrik</p>
+                        <p class="text-sm opacity-80">Di Subang Smartpolitan</p>
+                    </div>
+                </div>
+                 <p class="text-center text-xs text-gray-500 mt-8">
+                    Penting: Lokasi pabrik berada di **Subang Smartpolitan**, bukan di Purwakarta seperti yang mungkin diberitakan sebelumnya.
+                </p>
+            </div>
+        </section>
+
+        <section id="subang-smartpolitan" class="mb-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-900">Permata Mahkota: Subang Smartpolitan</h2>
+                    <p class="text-gray-600 mb-6">
+                        Dengan luas 2.717 hektar, Subang Smartpolitan dirancang sebagai kota mandiri "Cerdas, Hijau, dan Berkelanjutan". Lokasi dan konektivitasnya menjadi daya tarik utama.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="text-3xl mr-4">🚢</span>
+                            <div>
+                                <h4 class="font-bold">Akses Langsung ke Pelabuhan Patimban</h4>
+                                <p class="text-sm text-gray-500">Pintu gerbang logistik utama Indonesia untuk ekspor-impor.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-3xl mr-4">✈️</span>
+                            <div>
+                                <h4 class="font-bold">Dekat Bandara Internasional Kertajati</h4>
+                                <p class="text-sm text-gray-500">Mendukung konektivitas kargo udara dan penumpang.</p>
+                            </div>
+                        </div>
+                         <div class="flex items-center">
+                            <span class="text-3xl mr-4">🛣️</span>
+                            <div>
+                                <h4 class="font-bold">Terhubung Tol Trans-Jawa</h4>
+                                <p class="text-sm text-gray-500">Memastikan kelancaran distribusi darat ke seluruh Jawa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                     <h3 class="text-xl font-bold text-center mb-4 text-gray-900">"Efek BYD" pada Harga Lahan</h3>
+                     <p class="text-center text-gray-600 mb-6">
+                        Kehadiran BYD langsung mendongkrak nilai properti di kawasan Subang Smartpolitan, dan potensi kenaikan masih terbuka lebar.
+                     </p>
+                    <div class="chart-container">
+                        <canvas id="landPriceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="domino-effect" class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">Efek Domino: Terciptanya Klaster Industri EV</h2>
+                <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+                    Pabrik BYD akan menarik seluruh rantai pasoknya. Ini menciptakan gelombang permintaan lahan industri baru yang akan terus menguntungkan SSIA selama bertahun-tahun.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="text-center p-4 border-2 border-blue-300 rounded-lg bg-blue-50">
+                        <p class="text-4xl mb-2">🚗</p>
+                        <h4 class="font-bold">Pabrik BYD</h4>
+                        <p class="text-sm">Penyewa Jangkar</p>
+                    </div>
+                    <div class="text-2xl font-bold text-blue-500 transform md:rotate-0 rotate-90">&rarr;</div>
+                    <div class="text-center p-4 border-2 border-green-300 rounded-lg bg-green-50">
+                        <p class="text-4xl mb-2">⚙️</p>
+                        <h4 class="font-bold">Pemasok Tier-1</h4>
+                        <p class="text-sm">(Baterai, Sasis, Interior)</p>
+                    </div>
+                    <div class="text-2xl font-bold text-green-500 transform md:rotate-0 rotate-90">&rarr;</div>
+                    <div class="text-center p-4 border-2 border-yellow-400 rounded-lg bg-yellow-50">
+                        <p class="text-4xl mb-2">🔩</p>
+                        <h4 class="font-bold">Pemasok Tier-2</h4>
+                        <p class="text-sm">(Komponen Kecil)</p>
+                    </div>
+                     <div class="text-2xl font-bold text-yellow-500 transform md:rotate-0 rotate-90">&rarr;</div>
+                     <div class="text-center p-4 border-2 border-red-300 rounded-lg bg-red-50">
+                        <p class="text-4xl mb-2">📈</p>
+                        <h4 class="font-bold">Penjualan Lahan SSIA</h4>
+                        <p class="text-sm">Berkelanjutan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="financials" class="mb-16">
+             <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Analisis Keuangan: Di Balik Angka</h2>
+             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-center mb-4">Kinerja Solid 2024</h3>
+                    <p class="text-center text-gray-600 mb-6">Tahun 2024 menunjukkan momentum kuat dengan pertumbuhan signifikan di pendapatan dan laba bersih.</p>
+                    <div class="chart-container">
+                        <canvas id="performance2024Chart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-center mb-4">Membongkar Rugi Q1 2025</h3>
+                    <p class="text-center text-gray-600 mb-6">Kerugian sementara di Q1 2025 bukan karena bisnis inti melemah, melainkan dampak renovasi hotel yang bersifat jangka pendek.</p>
+                    <div class="chart-container">
+                        <canvas id="revenueMixQ12025Chart"></canvas>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section id="valuation" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Peluang Valuasi & Kepercayaan Pasar</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-center mb-4">Diskon Signifikan Terhadap Kompetitor</h3>
+                    <p class="text-center text-gray-600 mb-6">SSIA diperdagangkan dengan valuasi Price-to-Book (P/BV) yang jauh lebih rendah dibandingkan rata-rata kompetitor, menandakan adanya ruang kenaikan yang besar.</p>
+                    <div class="chart-container">
+                        <canvas id="competitorPBVChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col justify-center">
+                    <h3 class="text-xl font-bold text-center mb-6">Validasi dari "Smart Money"</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-100 rounded-lg p-4">
+                            <h4 class="font-bold">Grup Djarum</h4>
+                            <p class="text-sm text-gray-600">Terus mengakumulasi saham SSIA melalui PT Dwimuria Investama Andalan.</p>
+                        </div>
+                         <div class="bg-gray-100 rounded-lg p-4">
+                            <h4 class="font-bold">Prajogo Pangestu</h4>
+                            <p class="text-sm text-gray-600">Masuk sebagai pemegang saham signifikan melalui PT Chandra Asri Pacific Tbk (TPIA).</p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4">
+                            <h4 class="font-bold">Potensi Indeks MSCI</h4>
+                            <p class="text-sm text-gray-600">Peluang masuk ke MSCI Small Cap Index pada Agustus 2025 dapat memicu permintaan saham dari investor global.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="outlook" class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Prospek Masa Depan dan Penilaian Risiko</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-green-800">Pendorong Pertumbuhan</h3>
+                        <ul class="space-y-3 list-inside list-disc text-gray-700">
+                            <li><b>Penjualan Lahan Berkelanjutan:</b> Target 60-70 hektar per tahun di Subang.</li>
+                            <li><b>Apresiasi Harga Lahan:</b> Kenaikan nilai seiring pembangunan infrastruktur.</li>
+                            <li><b>Pemulihan Sektor Perhotelan:</b> Kontribusi laba pasca-renovasi Hotel Melia Bali.</li>
+                            <li><b>Sinergi Bisnis Konstruksi:</b> Peluang proyek di dalam kawasan Subang.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-red-800">Risiko yang Perlu Diwaspadai</h3>
+                         <ul class="space-y-3 list-inside list-disc text-gray-700">
+                            <li><b>Risiko Eksekusi:</b> Ketergantungan pada penyelesaian infrastruktur publik (Tol, Pelabuhan).</li>
+                            <li><b>Risiko Pasar:</b> Perlambatan ekonomi dapat menekan permintaan lahan industri.</li>
+                            <li><b>Risiko Operasional:</b> Potensi gangguan lokal yang perlu dikelola dengan baik.</li>
+                             <li><b>Risiko Konsentrasi:</b> Ketergantungan tinggi pada kesuksesan proyek Subang & BYD.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 py-8 border-t border-gray-300">
+             <p class="text-2xl font-bold text-gray-900">Rekomendasi: BELI</p>
+             <p class="text-4xl md:text-5xl font-black gradient-bg text-transparent bg-clip-text my-2">Target Harga: Rp 4.000</p>
+             <p class="text-gray-600 max-w-2xl mx-auto">SSIA menawarkan eksposur unik terhadap kisah pertumbuhan industri EV dan ekonomi masa depan Indonesia. Valuasi yang menarik dan katalisator yang jelas memberikan landasan kokoh untuk penciptaan nilai jangka panjang.</p>
+             <p class="text-xs text-gray-400 mt-8">Penafian: Informasi ini disajikan untuk tujuan ilustrasi berdasarkan data publik dan analisis pihak ketiga. Ini bukan merupakan nasihat investasi. Selalu lakukan riset Anda sendiri.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        const palette = {
+            blue: '#00A6ED',
+            green: '#75DB72',
+            yellow: '#FFD166',
+            red: '#F95A5A',
+            darkGray: '#202020',
+            lightGray: '#E5E7EB'
+        };
+
+        function wrapLabel(str, maxWidth) {
+            if (typeof str !== 'string' || str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + words[i].length + 1 < maxWidth) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+        
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const defaultChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        color: palette.darkGray,
+                        font: {
+                            family: "'Inter', sans-serif"
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    backgroundColor: palette.darkGray,
+                    titleFont: { size: 14, family: "'Inter', sans-serif" },
+                    bodyFont: { size: 12, family: "'Inter', sans-serif" },
+                    padding: 10,
+                    cornerRadius: 4,
+                    displayColors: true
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: { 
+                        color: palette.darkGray,
+                        font: { family: "'Inter', sans-serif" }
+                    },
+                    grid: { color: palette.lightGray }
+                },
+                x: {
+                    ticks: { 
+                        color: palette.darkGray,
+                        font: { family: "'Inter', sans-serif" }
+                    },
+                    grid: { display: false }
+                }
+            }
+        };
+
+        new Chart(document.getElementById('landPriceChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Sebelum BYD', 'Setelah BYD', 'Proyeksi (Tol Selesai)'],
+                datasets: [{
+                    label: 'Harga Jual Lahan (US$/m²)',
+                    data: [80, 120, 156],
+                    backgroundColor: [palette.blue, palette.green, palette.yellow],
+                    borderColor: [palette.blue, palette.green, palette.yellow],
+                    borderWidth: 1
+                }]
+            },
+            options: { ...defaultChartOptions }
+        });
+
+        new Chart(document.getElementById('performance2024Chart'), {
+            type: 'bar',
+            data: {
+                labels: ['Pendapatan Konsolidasi', 'Laba Bersih'],
+                datasets: [{
+                    label: 'Pertumbuhan 2024 vs 2023 (%)',
+                    data: [37.8, 32.6],
+                    backgroundColor: [palette.blue, palette.green],
+                }]
+            },
+            options: { ...defaultChartOptions, indexAxis: 'y' }
+        });
+
+        new Chart(document.getElementById('revenueMixQ12025Chart'), {
+            type: 'bar',
+            data: {
+                labels: ['Pendapatan (Rp Miliar)'],
+                datasets: [
+                    {
+                        label: 'Konstruksi',
+                        data: [887.6],
+                        backgroundColor: palette.blue,
+                    },
+                    {
+                        label: 'Properti',
+                        data: [163.8],
+                        backgroundColor: palette.green,
+                    },
+                    {
+                        label: 'Perhotelan (Turun 57%)',
+                        data: [18.6],
+                        backgroundColor: palette.red,
+                    }
+                ]
+            },
+            options: {
+                ...defaultChartOptions,
+                indexAxis: 'y',
+                scales: {
+                    x: { stacked: true, ticks: { color: palette.darkGray }, grid: { display: false } },
+                    y: { stacked: true, ticks: { color: palette.darkGray }, grid: { display: false } }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('competitorPBVChart'), {
+            type: 'bar',
+            data: {
+                labels: ['SSIA', 'DMAS', 'BEST', 'KIJA'],
+                datasets: [{
+                    label: 'Rasio Harga terhadap Nilai Buku (P/BV)',
+                    data: [0.50, 0.92, 0.22, 0.3],
+                    backgroundColor: (context) => context.label === 'SSIA' ? palette.red : palette.blue,
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                plugins: {
+                    ...defaultChartOptions.plugins,
+                    legend: { display: false }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
